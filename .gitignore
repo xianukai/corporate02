@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+
+# vscode
+.vscode
+
+# System
+.DS_Store
+
+Thumbs.db
+
+# Logs
+npm-debug.log*
+
+# Style
+/dist/**/*.css.map
+
+# /dist/css/*.css
+
+!/dist/js/
+
+# test
+test/

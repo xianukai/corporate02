@@ -1,0 +1,49 @@
+{
+  "default": {
+    "title": "KM Holdings",
+    "description": "デフォルトディスクリプション！",
+    "site_name": "KM・ホールディングス｜KM Holdings,Inc.",
+    "url": "/",
+    "twitter_title": "KM Holdings | twitter",
+    "twitter_description": "Change Working Dream Making",
+    "twitter_img": "/img/tw_img.png"
+  },
+  "top": {
+    "title": "top | KM Holdings",
+    "description": "14社を超える営業支援の実績。KM・ホールディンスの営業ソリューションは、AIが抽出した最適なアプローチリストを元にテストマーケティングを実施。御社だけの営業必勝パターンを見つけます。",
+    "keywords": "コンサルティング,システム開発,ブログ,事例紹介,切削加工,店舗デザイン,未分類,翻訳,製造",
+    "site_name": "KM・ホールディングス｜KM Holdings,Inc.",
+    "url": "/index.html"
+  },
+  "recruit": {
+    "title": "recruit | KM Holdings",
+    "description": "recruitトップ！",
+    "keywords": "コンサルティング,システム開発,ブログ,事例紹介,切削加工,店舗デザイン,未分類,翻訳,製造",
+    "site_name": "KM・ホールディングス｜KM Holdings,Inc.",
+    "url": "/recruit/index.html",
+    "twitter_title": "KM Holdings | twitter",
+    "twitter_description": "Change Working Dream Making",
+    "twitter_img": "/img/tw_img.png"
+  },
+  "recruit.fresh": {
+    "title": "新卒採用 | KM Holdings",
+    "description": "新卒採用",
+    "keywords": "コンサルティング,システム開発,ブログ,事例紹介,切削加工,店舗デザイン,未分類,翻訳,製造",
+    "site_name": "KM・ホールディングス｜KM Holdings,Inc.",
+    "url": "/recruit/fresh.html"
+  },
+  "recruit.midcareer": {
+    "title": "中途採用 | KM Holdings",
+    "description": "中途採用",
+    "keywords": "コンサルティング,システム開発,ブログ,事例紹介,切削加工,店舗デザイン,未分類,翻訳,製造",
+    "site_name": "KM・ホールディングス｜KM Holdings,Inc.",
+    "url": "/recruit/midcareer.html"
+  },
+  "recruit.entry": {
+    "title": "entry | KM Holdings",
+    "description": "entry",
+    "keywords": "コンサルティング,システム開発,ブログ,事例紹介,切削加工,店舗デザイン,未分類,翻訳,製造",
+    "site_name": "KM・ホールディングス｜KM Holdings,Inc.",
+    "url": "/recruit/entry.html"
+  }
+}

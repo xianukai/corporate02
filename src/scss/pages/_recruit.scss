@@ -1,0 +1,594 @@
+// @import "../partials/**";
+@import "partials/config";
+@import "partials/mixin";
+@import "partials/module";
+@import "partials/cover_slide";
+
+section {
+  padding: 50px 0;
+}
+
+.el_tag {
+  border: 1px solid #000;
+  padding: 4px 8px;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.bl_imgBox {
+  max-height: 300px;
+}
+
+.el_lv2Heading {
+  color: $main-color;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  padding-top: 60px;
+}
+.el_leadText {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  color: #000;
+  margin-top: 10px;
+}
+
+.el_lv3Heading {
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    border-left: 4px solid $main-color;
+    margin-right: 10px;
+  }
+}
+
+.el_lv4Heading {
+  // position: absolute;
+  // bottom: 12%;
+  // left: 4%;
+  font-size: 30px;
+  color: #fff;
+  z-index: 2;
+  text-shadow: 1px 1px 1px grey;
+
+  .ruby {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.ly_mv {
+  .btn {
+    @include btn(
+      transparent,
+      #fff,
+      20px 0
+    );
+  }
+}
+
+.ly_entry {
+  .card {
+    li {
+      width: calc((100% / 2 ) - 20px);
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+.bl_cardTextBox {
+  width: 70%;
+  padding: 20px 20px;
+  position: relative;
+  margin-top: -60px;
+  background-color: #fff;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.el_boxTtl {
+  font-size: 24px;
+}
+.el_boxText {
+  padding-left: 1em;
+}
+
+.ly_event {
+  background-color: gainsboro;
+  .card {
+    li {
+      &:first-child {
+        width: 60%;
+        margin-right: 40px;
+      }
+      &:nth-child(2n) {
+        // width: 40%;
+        margin-right: 0;
+      }
+
+      position: relative;
+
+      .el_lv4Heading {
+        position: absolute;
+        bottom: 12%;
+        left: 4%;
+        color: #fff;
+        z-index: 2;
+        text-shadow: 1px 1px 1px grey;
+
+        .ruby {
+          color: #fff;
+          font-size: 20px;
+          margin-top: 10px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.ly_midCareer {
+  background-color: gainsboro;
+
+  .card {
+    li {
+      &:first-child {
+        width: 60%;
+        margin-right: 40px;
+      }
+      &:nth-child(2n) {
+        // width: 40%;
+        margin-right: 0;
+      }
+
+      position: relative;
+
+      .el_lv4Heading {
+        position: absolute;
+        bottom: 16%;
+        left: 4%;
+
+        .ruby {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.ly_apply {
+  background: radial-gradient($main-color, #000);
+  color: #fff;
+
+  .el_lv3Heading {
+    &::before {
+      border-left: 4px solid #fff;
+    }
+  }
+
+  .btn {
+    @include btn(
+      $main-color,
+      #fff,
+      16px 0
+    )
+  }
+}
+
+.ly_service {
+  .card {
+    li {
+      width: calc((100% / 3) - 20px);
+      margin-right: 30px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      position: relative;
+    }
+  }
+
+  .bl_cardTextBox {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+// header
+#recruit {
+  .header {
+    display: flex;
+  }
+}
+
+.header {
+  // display: flex;
+  .ly_inner {
+    padding: 20px 0 20px 20px;
+  }
+
+  .btn {
+
+    &__entry {
+      @include btn(
+        $main-color,
+        #fff,
+        10px 0
+      );
+      width: 100%;
+      height: auto;
+      margin: 0 auto 0 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.nav {
+  ul {
+    li {
+      a {
+        &:before {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+// footer
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 40px;
+
+  a {
+    font-size: 14px;
+  }
+}
+
+#recruit {
+  .footer__left {
+    width: 24%;
+  }
+  .footer__right {
+    width: 76%;
+  }
+}
+
+.footer__right {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left__upper {
+  ul {
+    li {
+      padding-right: 18px;
+      border-right: 2px solid #fff;
+
+      &:last-child {
+        border-right: none;
+
+        // &:after {
+        //   content: "";
+        // }
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.footer__boxTtl {
+  a {
+    font-size: 18px;
+    // border-bottom: 1px solid transparent;
+    margin-bottom: 10px;
+
+    &:hover {
+      // border-bottom: 1px solid #fff;
+      text-decoration: underline;
+    }
+  }
+  &:before {
+    content: ">";
+
+  }
+}
+.footer__boxList {
+  margin-top: 20px;
+
+  .footer__boxListItem {
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    &:before {
+      content: ">";
+    }
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .el_strecheRod {
+    height: 8vh;
+  }
+
+  .el_lv2Heading {
+    font-size: 24px;
+  }
+
+  .el_lv4Heading {
+    font-size: 18px;
+  }
+  .ly_entry {
+    .card {
+      li {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+  .ly_service {
+    .card {
+      li {
+        width: 100%;
+        margin-right: 0;
+
+      }
+    }
+  }
+
+  .ly_event {
+    .card {
+      li {
+        &:first-child {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .ly_midCareer {
+    .card {
+      li {
+        &:first-child {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .footer__left {
+    width: 100%;
+  }
+  .footer__left__upper {
+    ul {
+      li {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+  }
+}
+
+.el_strecheRod {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  z-index: 1;
+  height: 15vh;
+
+  &__in {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2px;
+      bottom: 0;
+      background: #fff;
+      animation: stretchRod 2s cubic-bezier(0.51, 0.23, 0.68, 0.89) infinite;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+@keyframes stretchRod {
+  0% {
+    height: 0; 
+  }
+  50% {
+    height: 15vh;
+  }
+  100% {
+    height: 15vh;
+    transform: translate(0, 15vh); 
+  }
+}
+
+.topBg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 320px;
+  background: $main-color;
+  z-index: -10;
+}
+
+#fresh {
+  position: relative;
+
+  section {
+    display: flex;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  .el_lv2Heading {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    margin-left: 80px;
+    text-align: left;
+    z-index: 1;
+  }
+  .el_lv3Heading {
+    color: #fff;
+  }
+}
+
+.ly_heading {
+  background-image: url(/img/fresh_heading01.jpg);
+  margin-top: 40px;
+}
+
+.bl_centerBox {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .btn {
+    @include btn(
+      #fff,
+      $main-color,
+      10px 0
+    );
+  }
+}
+
+.ly_postingTtl {
+  
+  .ly_col {
+    width: 50%;
+    background-color: $main-color;
+    position: relative;
+
+    .bl_centerBox {
+      // text-align: center;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+
+      .btn {
+        @include btn(
+          #fff,
+          $main-color,
+          10px 0
+        );
+      }
+    }
+  }
+}
+
+#midcareer {
+  .ly_heading {
+    background-image: url(/img/midcareer_heading01.jpg);
+    background: {
+      size: cover;
+    }
+  }
+}
+
+#midcareer {
+  position: relative;
+
+  section {
+    display: flex;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  .el_lv2Heading {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    margin-left: 80px;
+    text-align: left;
+    z-index: 1;
+  }
+  .el_lv3Heading {
+    color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  #fresh {
+    .topBg {
+      max-height: 300px;
+    }
+    section {
+      flex-direction: column-reverse;
+      margin: 40px 0;
+
+      &:nth-child(2n) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  .ly_heading {
+    background: {
+      size: cover;
+    }
+  }
+
+  .ly_postingTtl {
+    .ly_col {
+      width: 100%;
+    }
+  }
+
+  .bl_centerBox {
+    position: static;
+    transform: translate(0, 0);
+
+    padding: 20px 0;
+  }
+
+  @keyframes stretchRod {
+    0% {
+      height: 0; 
+    }
+    50% {
+      height: 8vh;
+    }
+    100% {
+      height: 8vh;
+      transform: translate(0, 8vh); 
+    }
+  }
+}

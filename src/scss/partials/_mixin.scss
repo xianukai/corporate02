@@ -1,0 +1,65 @@
+@mixin ly_inner(
+  $cont-width: 1200px
+) {
+  width: $cont-width;
+  margin: 0 auto;
+}
+
+@mixin btn(
+  $bg: transparent,
+  $color: #fff,
+  $pd: 6px 0
+) {
+  display: block;
+  background: $bg;
+  color: $color;
+  border: 1px solid #fff;
+  padding: $pd;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+
+  &:hover {
+    background: #000;
+    color: #fff;
+    transition: all 0.4s;
+  }
+}
+
+@mixin card() {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__component {
+    box-shadow: 0 0 5px 0 #cecece;
+    width: calc((100% / 3) - 10px);
+  }
+}
+
+@mixin tag() {
+  background: #000;
+  color: #fff;
+  padding: 6px 10px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}

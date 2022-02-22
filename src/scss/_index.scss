@@ -1,0 +1,287 @@
+// @import "partials/**";
+@import "partials/config";
+@import "partials/mixin";
+@import "partials/module";
+@import "partials/cover_slide";
+@import "pages/recruit";
+
+// mainvisual
+.ly_mv {
+  color: #fff;
+  padding: 20px 0;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+  position: relative;
+
+  .bl_ttl__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .sec__title {
+      background: transparent;
+      padding: 0;
+    }
+  }
+}
+
+.sec__title {
+  text-align: center;
+  background: {
+    color: #f8f8f8;
+  }
+  padding: 50px 0;
+  margin-bottom: 50px;
+  font-size: 45px;
+}
+.sec__lead {
+  text-align: center;
+  font-size: 24px;
+}
+
+.ruby {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: $main-color;
+}
+
+section {
+  padding-top: 50px;
+}
+
+// about
+.about {
+  .sec__title {
+    background: #fff;
+  }
+  .ly_inner {
+    display: flex;
+
+    .col {
+      margin-right: 20px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      margin-bottom: 30px;
+    }
+
+    .lead__text {
+      text-align: center;
+    }
+  }
+  .btn {
+    @include btn(
+      transparent,
+      #000,
+      10px 0
+    );
+    border: 1px solid #000;
+  }
+}
+
+// news
+.news {
+  .ly_inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col {
+    width: calc((100% / 2) - 40px);
+  }
+
+  h3 {
+    span {
+      border-bottom: 2px solid $main-color;
+    }
+    margin-bottom: 30px;
+  }
+
+  .col {
+    ul {
+      li {
+        padding: 20px 0;
+        border-bottom: 1px solid #fff;
+        &:last-child {
+          margin: 0;
+        }
+        text-align: center;
+
+        a {
+          display: block;
+          padding-bottom: 20px;
+          border-bottom: 1px solid $main-color;
+          .top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            .date {
+              margin-right: 20px;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+// .interview
+.interview {
+  .card {
+    @include card();
+
+    &__component {
+      margin-right: 30px;
+      width: calc((100% / 3) - 20px);
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      margin-bottom: 30px;
+
+      a {
+        display: block;
+        &:hover {
+          transform: translateY(-4px);
+          transition: all 0.4s;
+        }
+      }
+    }
+    .card__title {
+      margin: 30px 0;
+    }
+
+    .card__bottom {
+      padding: 20px 20px;
+      .card__lead {
+        color: $main-color;
+      }
+      .card__text {
+        font-size: 14px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .btn {
+    @include btn(
+      transparent,
+      #000,
+      10px 0
+    );
+    border: 1px solid #000;
+  }
+}
+
+// products
+.products {
+  .card {
+    &__component {
+      width: calc((100% / 2) - 20px);
+      margin-right: 40px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      margin-bottom: 40px;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 30px 30px;
+      }
+
+      img {
+        height: 60px;
+        width: auto;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .sec__title {
+    font-size: 20px;
+  }
+  .sec__lead {
+    font-size: 16px;
+  }
+
+  .ly_mv {
+    height: auto;
+    min-height: 200px;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+
+  // about
+  .about {
+    .ly_inner {
+      flex-direction: column;
+
+      .col {
+        margin-right: 0;
+      }
+    }
+  }
+  .news {
+    .ly_inner {
+      flex-direction: column;
+    }
+
+    .col {
+      width: 100%;
+      h3 {
+        text-align: center;
+      }
+      ul {
+        li {
+          .bottom {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .interview {
+    .card {
+      flex-direction: column;
+  
+      &__component {
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .products {
+    .card {
+      flex-direction: column;
+  
+      &__component {
+        margin-right: 0;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+}
